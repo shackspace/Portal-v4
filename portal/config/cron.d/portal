@@ -1,0 +1,2 @@
+* *  * * *  root /opt/Portal-v4/portal/watchdog.sh
+* *  * * *  root /opt/Portal-v4/portal/send.py > /dev/null

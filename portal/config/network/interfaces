@@ -1,0 +1,16 @@
+auto lo
+iface lo inet loopback
+
+auto eth0
+#iface eth0 inet dhcp
+iface eth0 inet static
+	address 10.0.2.11
+	netmask 255.255.255.0
+	gateway 10.0.2.10
+
+iface default inet dhcp
+
+auto wlan0
+iface wlan0 inet static
+  address 172.16.0.1
+  netmask 255.255.255.0

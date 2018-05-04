@@ -1,0 +1,8 @@
+#!/bin/sh -e 
+
+service udhcpd start
+
+mkdir /var/run/portal
+chgrp portal /var/run/portal 
+
+exit 0

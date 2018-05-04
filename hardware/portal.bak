@@ -1,0 +1,496 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:portal-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PC817 U1
+U 1 1 59A2DC39
+P 3200 2550
+F 0 "U1" H 3000 2750 50  0000 L CNN
+F 1 "PC817" H 3200 2750 50  0000 L CNN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 3000 2350 50  0001 L CIN
+F 3 "" H 3200 2550 50  0001 L CNN
+	1    3200 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PC817 U2
+U 1 1 59A2DCC8
+P 3200 3250
+F 0 "U2" H 3000 3450 50  0000 L CNN
+F 1 "PC817" H 3200 3450 50  0000 L CNN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 3000 3050 50  0001 L CIN
+F 3 "" H 3200 3250 50  0001 L CNN
+	1    3200 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Raspberry_Pi_2_3 J3
+U 1 1 59A2E852
+P 8100 2900
+F 0 "J3" H 8800 1650 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 7700 3800 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x20_Pitch2.54mm" H 9100 4150 50  0001 C CNN
+F 3 "" H 8150 2750 50  0001 C CNN
+	1    8100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3300 6200 3300
+Wire Wire Line
+	10000 2500 9000 2500
+Wire Wire Line
+	7200 2800 6200 2800
+Wire Wire Line
+	3500 2450 3900 2450
+Wire Wire Line
+	3500 3150 3900 3150
+Text Label 9200 2400 0    60   ~ 0
+closebutton
+Text Label 9200 2500 0    60   ~ 0
+beeper
+Text Label 4400 3150 0    60   ~ 0
+keymatic_close
+Text Label 4400 2450 0    60   ~ 0
+keymatic_open
+Wire Wire Line
+	3500 2650 4750 2650
+Wire Wire Line
+	3500 3350 4750 3350
+$Comp
+L GND #PWR01
+U 1 1 59A2ECA3
+P 4750 3550
+F 0 "#PWR01" H 4750 3300 50  0001 C CNN
+F 1 "GND" H 4750 3400 50  0000 C CNN
+F 2 "" H 4750 3550 50  0001 C CNN
+F 3 "" H 4750 3550 50  0001 C CNN
+	1    4750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3350 4750 3550
+$Comp
+L GND #PWR02
+U 1 1 59A2ECF8
+P 4750 2850
+F 0 "#PWR02" H 4750 2600 50  0001 C CNN
+F 1 "GND" H 4750 2700 50  0000 C CNN
+F 2 "" H 4750 2850 50  0001 C CNN
+F 3 "" H 4750 2850 50  0001 C CNN
+	1    4750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2650 4750 2850
+Wire Wire Line
+	2900 2450 2250 2450
+Wire Wire Line
+	2900 2650 2250 2650
+Wire Wire Line
+	2900 3150 2250 3150
+Wire Wire Line
+	2900 3350 2250 3350
+$Comp
+L Screw_Terminal_1x02 J1
+U 1 1 59A2EDC8
+P 2050 2550
+F 0 "J1" H 2050 2800 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 1900 2550 50  0000 C TNN
+F 2 "SparkFun-Connectors:SCREWTERMINAL-5MM-2" H 2050 2325 50  0001 C CNN
+F 3 "" H 2025 2550 50  0001 C CNN
+	1    2050 2550
+	1    0    0    1   
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J2
+U 1 1 59A2EE6F
+P 2050 3250
+F 0 "J2" H 2050 3500 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 1900 3250 50  0000 C TNN
+F 2 "SparkFun-Connectors:SCREWTERMINAL-5MM-2" H 2050 3025 50  0001 C CNN
+F 3 "" H 2025 3250 50  0001 C CNN
+	1    2050 3250
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J4
+U 1 1 59A2F46F
+P 9250 5300
+F 0 "J4" H 9250 5400 50  0000 C CNN
+F 1 "CONN_01X01" V 9350 5300 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm_M2.5" H 9250 5300 50  0001 C CNN
+F 3 "" H 9250 5300 50  0001 C CNN
+	1    9250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J6
+U 1 1 59A2F4E4
+P 9850 5300
+F 0 "J6" H 9850 5400 50  0000 C CNN
+F 1 "CONN_01X01" V 9950 5300 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm_M2.5" H 9850 5300 50  0001 C CNN
+F 3 "" H 9850 5300 50  0001 C CNN
+	1    9850 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J5
+U 1 1 59A2F525
+P 9250 5850
+F 0 "J5" H 9250 5950 50  0000 C CNN
+F 1 "CONN_01X01" V 9350 5850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm_M2.5" H 9250 5850 50  0001 C CNN
+F 3 "" H 9250 5850 50  0001 C CNN
+	1    9250 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J7
+U 1 1 59A2F577
+P 9850 5850
+F 0 "J7" H 9850 5950 50  0000 C CNN
+F 1 "CONN_01X01" V 9950 5850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm_M2.5" H 9850 5850 50  0001 C CNN
+F 3 "" H 9850 5850 50  0001 C CNN
+	1    9850 5850
+	1    0    0    -1  
+$EndComp
+Text Label 6350 2800 0    60   ~ 0
+lock_contact
+Wire Wire Line
+	6200 2300 7200 2300
+Wire Wire Line
+	9000 2400 10000 2400
+Wire Wire Line
+	9000 2200 10000 2200
+Text Label 6350 3300 0    60   ~ 0
+reed_contact
+Text Label 9200 2200 0    60   ~ 0
+keymatic_open
+Text Label 6350 2300 0    60   ~ 0
+keymatic_close
+$Comp
+L Screw_Terminal_1x02 J8
+U 1 1 59A2F8A9
+P 2050 4150
+F 0 "J8" H 2050 4400 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 1900 4150 50  0000 C TNN
+F 2 "SparkFun-Connectors:SCREWTERMINAL-5MM-2" H 2050 3925 50  0001 C CNN
+F 3 "" H 2025 4150 50  0001 C CNN
+	1    2050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4050 4450 4050
+Wire Wire Line
+	2250 5650 4450 5650
+Wire Wire Line
+	2250 4900 3300 4900
+Wire Wire Line
+	2250 6450 3550 6450
+Text Label 3850 4050 0    60   ~ 0
+reed_contact
+Text Label 3850 5650 0    60   ~ 0
+lock_contact
+Text Label 2450 4900 0    60   ~ 0
+beeper
+Text Label 4250 6450 0    60   ~ 0
+closebutton
+$Comp
+L R R1
+U 1 1 59AC0B63
+P 4050 2450
+F 0 "R1" V 4130 2450 50  0000 C CNN
+F 1 "100" V 4050 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3980 2450 50  0001 C CNN
+F 3 "" H 4050 2450 50  0001 C CNN
+	1    4050 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 59AC0BFA
+P 4050 3150
+F 0 "R2" V 4130 3150 50  0000 C CNN
+F 1 "100" V 4050 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3980 3150 50  0001 C CNN
+F 3 "" H 4050 3150 50  0001 C CNN
+	1    4050 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 2450 5100 2450
+Wire Wire Line
+	4200 3150 5100 3150
+$Comp
+L Screw_Terminal_1x02 J11
+U 1 1 59AC1BCD
+P 2050 5750
+F 0 "J11" H 2050 6000 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 1900 5750 50  0000 C TNN
+F 2 "SparkFun-Connectors:SCREWTERMINAL-5MM-2" H 2050 5525 50  0001 C CNN
+F 3 "" H 2025 5750 50  0001 C CNN
+	1    2050 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J10
+U 1 1 59AC1DB0
+P 2050 6550
+F 0 "J10" H 2050 6800 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 1900 6550 50  0000 C TNN
+F 2 "SparkFun-Connectors:SCREWTERMINAL-5MM-2" H 2050 6325 50  0001 C CNN
+F 3 "" H 2025 6550 50  0001 C CNN
+	1    2050 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4250 3300 4250
+Wire Wire Line
+	3300 4250 3300 4350
+Wire Wire Line
+	2250 4700 3850 4700
+Wire Wire Line
+	3850 4700 3850 4800
+Wire Wire Line
+	2250 5850 3300 5850
+Wire Wire Line
+	3300 5850 3300 5950
+Wire Wire Line
+	2250 6650 3700 6650
+Wire Wire Line
+	3300 6650 3300 6750
+$Comp
+L GND #PWR03
+U 1 1 59AC1FAE
+P 3300 4350
+F 0 "#PWR03" H 3300 4100 50  0001 C CNN
+F 1 "GND" H 3300 4200 50  0000 C CNN
+F 2 "" H 3300 4350 50  0001 C CNN
+F 3 "" H 3300 4350 50  0001 C CNN
+	1    3300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 59AC1FE6
+P 3850 4800
+F 0 "#PWR04" H 3850 4550 50  0001 C CNN
+F 1 "GND" H 3850 4650 50  0000 C CNN
+F 2 "" H 3850 4800 50  0001 C CNN
+F 3 "" H 3850 4800 50  0001 C CNN
+	1    3850 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 59AC201E
+P 3300 5950
+F 0 "#PWR05" H 3300 5700 50  0001 C CNN
+F 1 "GND" H 3300 5800 50  0000 C CNN
+F 2 "" H 3300 5950 50  0001 C CNN
+F 3 "" H 3300 5950 50  0001 C CNN
+	1    3300 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 59AC2065
+P 3300 6750
+F 0 "#PWR06" H 3300 6500 50  0001 C CNN
+F 1 "GND" H 3300 6600 50  0000 C CNN
+F 2 "" H 3300 6750 50  0001 C CNN
+F 3 "" H 3300 6750 50  0001 C CNN
+	1    3300 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4200 7800 4850
+Text Label 7800 4600 1    60   ~ 0
+GND
+Wire Wire Line
+	8300 1600 8300 1050
+Text Label 8300 1400 1    60   ~ 0
+VCC
+$Comp
+L VCC #PWR07
+U 1 1 59AC37F5
+P 4100 3700
+F 0 "#PWR07" H 4100 3550 50  0001 C CNN
+F 1 "VCC" H 4100 3850 50  0000 C CNN
+F 2 "" H 4100 3700 50  0001 C CNN
+F 3 "" H 4100 3700 50  0001 C CNN
+	1    4100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3700 4100 3850
+Wire Wire Line
+	3300 3850 3300 4050
+Connection ~ 3300 4050
+$Comp
+L R R3
+U 1 1 59AC39F8
+P 3700 3850
+F 0 "R3" V 3780 3850 50  0000 C CNN
+F 1 "10k" V 3700 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3630 3850 50  0001 C CNN
+F 3 "" H 3700 3850 50  0001 C CNN
+	1    3700 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 3850 3850 3850
+Wire Wire Line
+	3300 3850 3550 3850
+Wire Wire Line
+	7900 1600 7900 1050
+Text Label 7900 1400 1    60   ~ 0
+5V
+$Comp
+L VCC #PWR08
+U 1 1 59AC4309
+P 4100 6100
+F 0 "#PWR08" H 4100 5950 50  0001 C CNN
+F 1 "VCC" H 4100 6250 50  0000 C CNN
+F 2 "" H 4100 6100 50  0001 C CNN
+F 3 "" H 4100 6100 50  0001 C CNN
+	1    4100 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 6100 4100 6250
+Wire Wire Line
+	3300 6450 3300 6250
+$Comp
+L R R4
+U 1 1 59AC4311
+P 3700 6250
+F 0 "R4" V 3780 6250 50  0000 C CNN
+F 1 "5k6" V 3700 6250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3630 6250 50  0001 C CNN
+F 3 "" H 3700 6250 50  0001 C CNN
+	1    3700 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 6250 3850 6250
+Wire Wire Line
+	3300 6250 3550 6250
+Connection ~ 3300 6450
+$Comp
+L R R5
+U 1 1 59AC45E1
+P 3700 6450
+F 0 "R5" V 3780 6450 50  0000 C CNN
+F 1 "1k" V 3700 6450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3630 6450 50  0001 C CNN
+F 3 "" H 3700 6450 50  0001 C CNN
+	1    3700 6450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 6450 4800 6450
+$Comp
+L VCC #PWR09
+U 1 1 59AD840A
+P 4100 5300
+F 0 "#PWR09" H 4100 5150 50  0001 C CNN
+F 1 "VCC" H 4100 5450 50  0000 C CNN
+F 2 "" H 4100 5300 50  0001 C CNN
+F 3 "" H 4100 5300 50  0001 C CNN
+	1    4100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5300 4100 5450
+Wire Wire Line
+	3300 5650 3300 5450
+$Comp
+L R R6
+U 1 1 59AD8412
+P 3700 5450
+F 0 "R6" V 3780 5450 50  0000 C CNN
+F 1 "10k" V 3700 5450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3630 5450 50  0001 C CNN
+F 3 "" H 3700 5450 50  0001 C CNN
+	1    3700 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5450 3850 5450
+Wire Wire Line
+	3300 5450 3550 5450
+Connection ~ 3300 5650
+$Comp
+L Buzzer BZ1
+U 1 1 5A1ADD4A
+P 2150 4800
+F 0 "BZ1" H 2300 4850 50  0000 L CNN
+F 1 "Buzzer" H 2300 4750 50  0000 L CNN
+F 2 "Buzzers_Beepers:MagneticBuzzer_ProSignal_ABT-410-RC" V 2125 4900 50  0001 C CNN
+F 3 "" V 2125 4900 50  0001 C CNN
+	1    2150 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A92F49F
+P 3850 6650
+F 0 "C?" H 3875 6750 50  0000 L CNN
+F 1 "C" H 3875 6550 50  0000 L CNN
+F 2 "" H 3888 6500 50  0001 C CNN
+F 3 "" H 3850 6650 50  0001 C CNN
+	1    3850 6650
+	0    1    1    0   
+$EndComp
+Connection ~ 3300 6650
+Wire Wire Line
+	4000 6650 4050 6650
+Wire Wire Line
+	4050 6650 4050 6450
+Connection ~ 4050 6450
+$EndSCHEMATC

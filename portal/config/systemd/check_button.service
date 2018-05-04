@@ -1,0 +1,15 @@
+[Unit]
+Description=Checks the portal close button
+After=syslog.target
+
+[Service]
+Type=simple
+User=close
+Group=close
+WorkingDirectory=/opt/Portal-v4/portal
+ExecStart=/opt/Portal-v4/portal/check_button.py
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
