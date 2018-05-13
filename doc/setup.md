@@ -15,8 +15,8 @@ Keys are managed by shackspaces internal management software (at the moment byro
 
 Format for user open is:
 
-command="/opt/Portal-v4/portal/portal.py -a open -s $shack_id -n \"$real_name\" --nick \"$nick_name\"",no-port-forwarding,no-X11-forwarding,no-agent-forwarding ssh-rsa $ssh_pubkey
+command="/opt/Portal/portal/portal.py -a open -s $shack_id -n \"$real_name\" --nick \"$nick_name\"",no-port-forwarding,no-X11-forwarding,no-agent-forwarding ssh-rsa $ssh_pubkey
 
 For user close it is:
 
-command="/opt/Portal-v4/portal/portal.py -a close -s $shack_id -n \"$real_name\" --nick \"$nick_name\"",no-port-forwarding,no-X11-forwarding,no-agent-forwarding ssh-rsa $ssh_pubkey
+command="/opt/Portal/portal/portal.py -a close -s $shack_id -n \"$real_name\" --nick \"$nick_name\"",no-port-forwarding,no-X11-forwarding,no-agent-forwarding ssh-rsa $ssh_pubkey
