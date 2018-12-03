@@ -119,6 +119,7 @@ class Portal():
                 GPIO.output(KEYMATIC_CLOSE_PIN, GPIO.LOW)
                 if self.is_reed_closed(15):
                     self.beep_success()
+                    update_keyholder("No Keyholder")
                     return
                 else:
                     break
@@ -245,7 +246,6 @@ def main():
             if options.action == 'close':
                 msg = 'Door closed by: %s (ID: %s)' % (options.name, options.serial)
                 log(msg)
-                update_keyholder("No Keyholder")
                 portal.close_portal()
 
 
